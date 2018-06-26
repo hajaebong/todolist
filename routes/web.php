@@ -84,3 +84,7 @@ Route::resource('user.post','PostController');
 // namespace App\Http\Controllers\Admin
 //Admin 계층화
 //Route::get('dashboard','Admin\AdminController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
